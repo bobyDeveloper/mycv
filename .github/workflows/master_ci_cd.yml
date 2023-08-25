@@ -21,8 +21,8 @@ jobs:
         run: npm ci
 
       - name: list node_modules
-      - run: ls node_modules
+        run: ls node_modules
 
-      - name: test
-      - run: |
+      - name: Test
+        run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
