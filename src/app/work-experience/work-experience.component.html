@@ -1,1 +1,10 @@
-<p>work-experience works!</p>
+<div>
+  <p> {{ puesto }} </p>
+  <p> {{ empresa }} </p>
+  <p> {{ fecha_ini }} - {{ fecha_fin }} </p>
+  <p> {{ ciudad }}, {{ pais }} </p>
+  <ul>
+    <li *ngFor="let logro of logros">{{ logro }}</li>
+  </ul>
+</div>
+
