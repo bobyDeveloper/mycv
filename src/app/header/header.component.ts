@@ -14,6 +14,11 @@ export class HeaderComponent implements OnInit {
 	titulos : string = "fake phd";
 	mision : string = "fake mision";
 	foto : string = "fake photo";
+	email : string = "fake email";
+	celular : string = "fake celular";
+	ubicacion : string = "fake ubicacion";
+	redsocial : string = "fake redsocial";
+
 
 	ngOnInit(): void {
 		this.headerService.getHeader()
@@ -24,6 +29,10 @@ export class HeaderComponent implements OnInit {
 			this.titulos = data.titulos;
 			this.mision = data.mision;
 			this.foto = data.foto;
+			this.email = data.email;
+			this.celular = data.celular;
+			this.ubicacion = data.ubicacion;
+			this.redsocial = data.redsocial;
 		});
 	}
 
