@@ -7,6 +7,7 @@ import { WorkExperienceService } from '../services/work-experience.service';
   styleUrls: ['./work-experience.component.css']
 })
 export class WorkExperienceComponent implements OnInit {
+
   trabajos: any[] = [];
 
   constructor(private workExperienceService: WorkExperienceService) { }
@@ -18,3 +19,4 @@ export class WorkExperienceComponent implements OnInit {
     });
   }
 }
+

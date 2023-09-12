@@ -1,11 +1,14 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class WorkExperienceService {
+
   private apiUrl = 'http://localhost:8080'; 
 
   constructor(private http: HttpClient) { }
@@ -17,3 +20,4 @@ export class WorkExperienceService {
       );
   }
 }
+
