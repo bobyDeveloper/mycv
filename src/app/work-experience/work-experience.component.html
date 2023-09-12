@@ -1,10 +1,25 @@
-<div>
-  <p> {{ puesto }} </p>
-  <p> {{ empresa }} </p>
-  <p> {{ fecha_ini }} - {{ fecha_fin }} </p>
-  <p> {{ ciudad }}, {{ pais }} </p>
-  <ul>
-    <li *ngFor="let logro of logros">{{ logro }}</li>
-  </ul>
+
+<div class="app-work-experience">
+  <div class="work-experience-list">
+    <div class="experience-header">
+      <h2 class="work-experience-title">Experiencia Laboral</h2>
+    </div>
+
+    <div *ngFor="let trabajo of trabajos; let i = index" class="work-experience-container">
+      <div class="indicator indicator-{{ i + 1 }}"></div>
+      <div class="work-experience-details">
+        <h3>{{ trabajo.puesto }}</h3>
+        <div class="work-experience-info">
+          <p class="company">{{ trabajo.empresa }}</p>
+          <p class="location">{{ trabajo.ciudad }}, {{ trabajo.pais }}</p>
+          <p class="date">{{ trabajo.fecha_ini }} - {{ trabajo.fecha_fin }}</p>
+        </div>
+        <h4>Logros:</h4>
+        <ul class="achievements">
+          <li *ngFor="let logro of trabajo.logros">{{ logro.logro }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
