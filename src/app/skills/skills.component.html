@@ -1,0 +1,26 @@
+<div class="app-skills">
+    <div class="skills-list">
+      <div class="skills-header">
+        <h2 class="skills-title">Habilidades Técnicas</h2>
+      </div>
+  
+      <div *ngFor="let skill of skills; let i = index" class="skill-container">
+        <div class="indicator indicator-{{ i + 1 }}"></div>
+        <div class="skill-details">
+          <h3>{{ skill.skillName }}</h3>
+          <p class="description">{{ skill.description }}</p>
+          
+          <h4>Tecnologías:</h4>
+          <ul class="technologies">
+            <li *ngFor="let tech of skill.technologies">{{ tech }}</li>
+          </ul>
+  
+          <h4>Proyectos Relevantes:</h4>
+          <ul class="projects">
+            <li *ngFor="let project of skill.projects">{{ project.project }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
