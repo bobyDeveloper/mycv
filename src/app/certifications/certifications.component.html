@@ -1,0 +1,15 @@
+<div class="app-certifications">
+    <div class="certifications-list">
+        <div class="certifications-header">
+            <h2>Certificaciones y Logros</h2>
+            <hr> <!-- Una línea horizontal para separar el título de las certificaciones -->
+        </div>
+
+        <div *ngFor="let certification of certifications">
+            <h3>{{ certification.title }}</h3>
+            <p>Organismo Emisor: {{ certification.issuer }}</p>
+            <p>Fecha de Obtención: {{ certification.date }}</p>
+            <hr> <!-- Una línea horizontal para separar cada certificación -->
+        </div>
+    </div>
+</div>
