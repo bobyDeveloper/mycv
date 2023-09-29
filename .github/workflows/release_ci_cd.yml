@@ -37,7 +37,6 @@ jobs:
 
       - name: show docker images
         run: docker images
-        ##
 
       - name: docker login
         env:
