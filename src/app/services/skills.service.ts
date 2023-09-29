@@ -9,7 +9,7 @@ import { Observable, map } from 'rxjs';
 })
 export class SkillsService {
 
-  private apiUrl = 'http://localhost:8080https://api-cv-angular-service-bobydeveloper.cloud.okteto.net'; 
+  private apiUrl = 'https://api-cv-angular-service-bobydeveloper.cloud.okteto.net'; 
 
   constructor(private http: HttpClient) { }
 
